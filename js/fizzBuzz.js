@@ -5,11 +5,11 @@ const theOutputParagraph =document.getElementById("theOutputParagraph");
 
 let myArray=[];
 
-function FizzBuzz(){
+function submitFunction() {
 
     for (let i= 1; i < 101; i++) {
 
-    if ((i % 3===0)&&(i % 5===0)) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
             myArray.push("Fizz-Buzz");
         }
 
@@ -26,7 +26,7 @@ function FizzBuzz(){
         myArray.push(i);
     }
 
-    }
+    
     //myOutputElement.innerHTML=myArray;
 }
 
@@ -37,3 +37,4 @@ for (let i=0; i < myArray.length; i++) {
     document.getElementById("theOutput").appendChild(myElement);
     
     }
+}
